@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Russo+One&display=swap');
+
+:root {
+    --primary-color-text: #A9A9A9;
+    --primary-color-headlines: #D5BFDF;
+    --primary-color-buttons: #FDFBD2;
+    --primary-color-background: #fcf7f7;
+    --primary-color-text-dark: #7A7777;
+}
+
+* {
+   font-family: "Roboto", sans-serif; 
+}
+
+.container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.menu-list ul {
+    list-style: none;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.menu-list ul li {
+    display: inline-block;
+    margin-right: 48px;
+    padding: 10px;
+}
+
+.menu-list ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--primary-color-text-dark);
+    font-weight: 700;
+    font-size: 32px;
+    transition: transform 0.5s ease-in-out, text-shadow 0.5s ease-in-out;
+}
+
+.menu-list ul li a:hover {
+    transform: scale(1.5);
+    text-shadow: 4px 4px 1px #77777769;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+}
+
+.gallery-item img {
+    display: inline-block;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.gallery-item img:hover {
+    /*transform: scale(1.1);*/
+    box-shadow: 10px 10px 10px #77777787;
+}
+
+.profile-details button {
+    display: block;
+    background-color: var(--primary-color-buttons);
+    color: var(--primary-color-headlines);
+    font-size: 24px;
+    width: 264px;
+    border: none;
+    padding: 14px 20px;
+    margin-left: 24px;
+    margin-top: 10px;
+    border-radius: 10px;
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+.profile-details button:hover {
+    box-shadow: 4px 4px 4px var(--primary-color-headlines);
+}
+
+.contact-form {
+    display: block;
+    width: 100%;
+    font-size: 20px;
+}
+
+.contact-form form {
+    text-align: start;
+    box-sizing: border-box;
+    padding: 32px;
+}
+
+input, textarea {
+    width: 100%;
+    background-color: var(--primary-color-buttons);
+    border: none;
+}
+
+input {
+    height: 34px;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    box-sizing: border-box;
+    border-top: 2px solid var(--primary-color-headlines);
+    border-left: 2px solid var(--primary-color-headlines);
+}
